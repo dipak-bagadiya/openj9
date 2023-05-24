@@ -511,7 +511,7 @@ JVM_VirtualThreadHideFrames(JNIEnv *env, jobject vthread, jboolean hide)
 }
 #endif /* JAVA_SPEC_VERSION >= 20 */
 
-#if JAVA_SPEC_VERSION >= 21
+#if JAVA_SPEC_VERSION >= 20
 JNIEXPORT void JNICALL
 JVM_VirtualThreadMount(JNIEnv* env, jobject vthread, jboolean hide, jboolean firstMount)
 {
@@ -537,7 +537,7 @@ JVM_VirtualThreadUnmount(JNIEnv* env, jobject vthread, jboolean hide, jboolean l
 		virtualThreadUnmountEnd(env, vthread, lastUnmount);
 	}
 }
-#endif /* JAVA_SPEC_VERSION >= 21 */
+#endif /* JAVA_SPEC_VERSION >= 20 */
 
 #if defined(J9VM_OPT_VALHALLA_VALUE_TYPES)
 JNIEXPORT jboolean JNICALL
